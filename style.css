@@ -73,6 +73,9 @@
     /* Safari, Android, iOS */
       url("./assets/fonts/inter-v8-latin-700.svg#Inter") format("svg"); /* Legacy iOS */
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -88,8 +91,55 @@ body {
 .footer {
   border: 1px solid red;
 }
+.main {
+  margin-bottom: auto;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.header {
+  background: url(./assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+.nav {
+  margin-left: auto;
+}
+.switch-lng {
+  color: white;
+}
+.nav-list,
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-list__link {
+  padding: 20px 30px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: color 0.3s;
+  color: white;
+}
+.nav-list__link:hover {
+  color: #bdae82;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  padding: 20px 0px;
+}
+.header__logo-link {
+  transition: 0.3s;
+}
+.header__logo-link:hover {
+  filter: invert(21%) sepia(7%) saturate(1339%) hue-rotate(7deg) brightness(87%)
+    contrast(93%);
+}
+.hero-section {
+  background-image: url(./assets/img/bg.jpg);
+  background-position: center -93px;
+  background-repeat: no-repeat;
 }

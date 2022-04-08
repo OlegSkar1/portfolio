@@ -73,3 +73,23 @@
     /* Safari, Android, iOS */
       url("./assets/fonts/inter-v8-latin-700.svg#Inter") format("svg"); /* Legacy iOS */
 }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+.header,
+.main,
+.footer {
+  border: 1px solid red;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

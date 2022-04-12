@@ -77,10 +77,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh; */
   font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -88,23 +84,57 @@ body {
   line-height: 2;
   color: white;
 }
+.section-title {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #bdae82;
+  padding-top: 100px;
+  max-width: 700px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section-title__left-right-line {
+  text-align: center;
+}
+.section-title__left-right-line::before {
+  content: "";
+  border-bottom: 2px solid #bdae82;
+  width: 50%;
+  height: 0.5em;
+  position: absolute;
+  top: 0px;
+  padding-top: 120px;
+  margin-left: calc(-50% - 20px);
+}
+.section-title__left-right-line::after {
+  content: "";
+  border-bottom: 2px solid #bdae82;
+  width: 50%;
+  height: 0.5em;
+  position: absolute;
+  top: 0px;
+  padding-top: 120px;
+  margin-left: 20px;
+}
 
-/* .footer {
-  border: 1px solid red;
-}
-.main {
-  flex: 1 0 auto;
-}
-.footer {
-  flex: 0 0 auto;
-} */
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 .section {
   padding: 0 20px;
+  background-color: black;
 }
+.section:first-child {
+  background: transparent;
+}
+/* header start */
 .header {
   background: url(./assets/img/bg.jpg);
   background-repeat: no-repeat;
@@ -130,7 +160,9 @@ body {
   transition: color 0.3s;
   color: white;
 }
-.nav-list__link:hover {
+.nav-list__link:hover,
+.nav-list__link:active,
+.nav-list__link:focus {
   color: #bdae82;
 }
 .icon {
@@ -145,17 +177,19 @@ body {
   filter: invert(21%) sepia(7%) saturate(1339%) hue-rotate(7deg) brightness(87%)
     contrast(93%);
 }
+/* header end */
+
+/* hero section start */
 .main__background {
   background-image: url(./assets/img/bg.jpg);
   background-position: center -103px;
   background-repeat: no-repeat;
-  height: 817px;
-  /* background-size: cover; */
+  height: 807px;
 }
 .hero-section__text {
   width: 500px;
   height: 330px;
-  padding: 160px 0 327px 80px;
+  padding: 160px 0 317px 80px;
 }
 .hero-section__text h1 {
   font-family: "Merriweather";
@@ -168,3 +202,20 @@ body {
 .hero-section__text p {
   padding-bottom: 25px;
 }
+.button {
+  width: 220px;
+  height: 55px;
+  background-color: #bdae82;
+  border: 0;
+  transition: 0.3s;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  color: white;
+}
+/* hero section end */
+
+/* skills start */
+
+/* skills end */

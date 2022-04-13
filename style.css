@@ -228,7 +228,7 @@ img {
 .section__skills__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 40px;
+  column-gap: 40px;
   padding-top: 75px;
 }
 /* .section__skills__items:last-child {
@@ -259,3 +259,63 @@ img {
   margin: 0 auto;
 }
 /* skills end */
+
+/* portfolio start */
+
+.portfolio__btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 895px;
+  height: 55px;
+  column-gap: 5px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.portfolio__btn {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+  color: #bdae82;
+  background-color: black;
+  border: 1px solid #bdae82;
+  transition: 0.3s;
+}
+.portfolio__btn:focus,
+.portfolio__btn:visited {
+  color: black;
+  background-color: #bdae82;
+}
+.portfolio__pics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1400px;
+  max-height: 1145px;
+  gap: 25px;
+  margin: 0 auto;
+}
+
+/* portfolio end */
+
+/* video start */
+
+.section__video {
+  position: relative;
+  padding-top: 60px;
+}
+.video__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.video__icon:hover {
+  filter: invert(21%) sepia(7%) saturate(1339%) hue-rotate(7deg) brightness(87%)
+    contrast(93%);
+}
+
+/* video end */

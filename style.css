@@ -83,6 +83,11 @@ body {
   font-style: normal;
   line-height: 2;
   color: white;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh; */
 }
 img {
   max-width: 100%;
@@ -138,21 +143,14 @@ img {
   padding: 0 20px;
   background-color: black;
 }
-.section:first-child {
-  background: transparent;
-  margin: 0;
-}
-.section:last-child {
-  padding-top: 100px;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-}
-/* header start */
+
+/** header start */
 .header {
-  background: url(./assets/img/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 .nav {
   margin-left: auto;
@@ -161,11 +159,16 @@ img {
   color: white;
   padding-right: 20px;
 }
-.nav-list,
+
 .header__container {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .nav-list__link {
   padding: 20px 30px;
@@ -191,19 +194,20 @@ img {
   filter: invert(21%) sepia(7%) saturate(1339%) hue-rotate(7deg) brightness(87%)
     contrast(93%);
 }
-/* header end */
+/** header end */
 
-/* hero section start */
+/** hero section start */
 .main__background {
   background-image: url(./assets/img/bg.jpg);
-  background-position: center -103px;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 807px;
+  background-size: cover;
+  height: auto;
 }
 .hero-section__text {
   width: 500px;
   height: 100%;
-  padding: 160px 0 317px 80px;
+  padding: 250px 0 330px 80px;
 }
 .hero-section__text h1 {
   font-family: "Merriweather";
@@ -234,19 +238,15 @@ img {
 .button:focus {
   color: white;
 }
-/* hero section end */
+/** hero section end */
 
-/* skills start */
+/** skills start */
 .section__skills__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
   padding-top: 75px;
 }
-/* .section__skills__items:last-child {
-  padding-right: 0;
-} */
-
 .section__skills__pic {
   max-width: 66px;
   margin: 0 auto 50px;
@@ -270,9 +270,9 @@ img {
   max-width: 280px;
   margin: 0 auto;
 }
-/* skills end */
+/** skills end */
 
-/* portfolio start */
+/** portfolio start */
 
 .portfolio__btns {
   display: grid;
@@ -310,19 +310,29 @@ img {
   margin: 0 auto;
 }
 
-/* portfolio end */
+/** portfolio end */
 
-/* video start */
+/** video start */
 
-.section__video {
-  position: relative;
-  padding-top: 60px;
+.section__video__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/img/video-player.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 705px;
+  margin-top: 60px;
+}
+.video__icon__wrapper {
+  max-width: 130px;
+  max-height: 130px;
 }
 .video__icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
   transition: 0.3s;
 }
 .video__icon:hover {
@@ -330,19 +340,21 @@ img {
     contrast(93%);
 }
 
-/* video end */
+/** video end */
 
-/* price start */
+/** price start */
 .price__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 25px;
+  padding-top: 60px;
 }
 .price__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 43px 0;
+  margin-bottom: 100px;
   border: 2px solid #bdae82;
 }
 .price__title {
@@ -375,19 +387,24 @@ img {
 /** price end */
 
 /** contacts start */
-
-.contacts__pic {
-  position: relative;
+.contacts-section {
   max-width: 1440px;
-  max-height: 700px;
+  margin: 0 auto;
+}
+.contacts__pic {
+  display: block;
+  background-image: url(./assets/img/contacts.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
 }
 .contacts-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(970px, 60px);
   max-width: 450px;
   padding-right: 20px;
+  padding-top: 60px;
+  margin-left: auto;
 }
 .contacts-title {
   font-family: "Merriweather";
@@ -425,6 +442,15 @@ img {
   margin-bottom: 30px;
   resize: none;
 }
+.contacts-form input textarea {
+  color: #bdae82;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  overflow: hidden;
+}
 input:focus,
 textarea:focus {
   color: #bdae82;
@@ -435,4 +461,17 @@ textarea:focus {
   line-height: 40px;
   overflow: hidden;
 }
+input,
+textarea {
+  color: #bdae82;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+}
 /** contacts end */
+
+/** footer start */
+
+/** footer end */

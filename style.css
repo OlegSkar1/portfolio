@@ -474,4 +474,44 @@ textarea {
 
 /** footer start */
 
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  margin: 0 auto;
+}
+.footer-data__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 188px;
+}
+.footer a:hover,
+.footer a:active,
+.footer a:focus {
+  color: #bdae82;
+}
+.social-list__pic {
+  transition: 0.3s;
+}
+.social-list__pic:hover {
+  filter: invert(21%) sepia(7%) saturate(1339%) hue-rotate(7deg) brightness(87%)
+    contrast(93%);
+}
 /** footer end */

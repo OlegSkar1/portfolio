@@ -1,96 +1,97 @@
 /* merriweather-regular - latin */
 @font-face {
-  font-family: "Merriweather";
+  font-family: 'Merriweather';
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/merriweather-v28-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("./assets/fonts/merriweather-v28-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/merriweather-v28-latin-regular.woff2")
-      format("woff2"),
+  src: url('./assets/fonts/merriweather-v28-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./assets/fonts/merriweather-v28-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./assets/fonts/merriweather-v28-latin-regular.woff2')
+      format('woff2'),
     /* Super Modern Browsers */
-      url("./assets/fonts/merriweather-v28-latin-regular.woff") format("woff"),
+      url('./assets/fonts/merriweather-v28-latin-regular.woff') format('woff'),
     /* Modern Browsers */
-      url("./assets/fonts/merriweather-v28-latin-regular.ttf")
-      format("truetype"),
+      url('./assets/fonts/merriweather-v28-latin-regular.ttf')
+      format('truetype'),
     /* Safari, Android, iOS */
-      url("./assets/fonts/merriweather-v28-latin-regular.svg#Merriweather")
-      format("svg"); /* Legacy iOS */
+      url('./assets/fonts/merriweather-v28-latin-regular.svg#Merriweather')
+      format('svg'); /* Legacy iOS */
 }
 /* merriweather-700 - latin */
 @font-face {
-  font-family: "Merriweather";
+  font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
-  src: url("./assets/fonts/merriweather-v28-latin-700.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("./assets/fonts/merriweather-v28-latin-700.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/merriweather-v28-latin-700.woff2")
-      format("woff2"),
+  src: url('./assets/fonts/merriweather-v28-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./assets/fonts/merriweather-v28-latin-700.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./assets/fonts/merriweather-v28-latin-700.woff2')
+      format('woff2'),
     /* Super Modern Browsers */
-      url("./assets/fonts/merriweather-v28-latin-700.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/merriweather-v28-latin-700.ttf")
-      format("truetype"),
+      url('./assets/fonts/merriweather-v28-latin-700.woff') format('woff'),
+    /* Modern Browsers */ url('./assets/fonts/merriweather-v28-latin-700.ttf')
+      format('truetype'),
     /* Safari, Android, iOS */
-      url("./assets/fonts/merriweather-v28-latin-700.svg#Merriweather")
-      format("svg"); /* Legacy iOS */
+      url('./assets/fonts/merriweather-v28-latin-700.svg#Merriweather')
+      format('svg'); /* Legacy iOS */
 }
 
 /* inter-regular - latin */
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/inter-v8-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("./assets/fonts/inter-v8-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/inter-v8-latin-regular.woff2")
-      format("woff2"),
+  src: url('./assets/fonts/inter-v8-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./assets/fonts/inter-v8-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./assets/fonts/inter-v8-latin-regular.woff2')
+      format('woff2'),
     /* Super Modern Browsers */
-      url("./assets/fonts/inter-v8-latin-regular.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/inter-v8-latin-regular.ttf")
-      format("truetype"),
+      url('./assets/fonts/inter-v8-latin-regular.woff') format('woff'),
+    /* Modern Browsers */ url('./assets/fonts/inter-v8-latin-regular.ttf')
+      format('truetype'),
     /* Safari, Android, iOS */
-      url("./assets/fonts/inter-v8-latin-regular.svg#Inter") format("svg"); /* Legacy iOS */
+      url('./assets/fonts/inter-v8-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
 }
 /* inter-700 - latin */
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url("./assets/fonts/inter-v8-latin-700.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("./assets/fonts/inter-v8-latin-700.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/inter-v8-latin-700.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("./assets/fonts/inter-v8-latin-700.woff")
-      format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/inter-v8-latin-700.ttf")
-      format("truetype"),
+  src: url('./assets/fonts/inter-v8-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('./assets/fonts/inter-v8-latin-700.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./assets/fonts/inter-v8-latin-700.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./assets/fonts/inter-v8-latin-700.woff')
+      format('woff'),
+    /* Modern Browsers */ url('./assets/fonts/inter-v8-latin-700.ttf')
+      format('truetype'),
     /* Safari, Android, iOS */
-      url("./assets/fonts/inter-v8-latin-700.svg#Inter") format("svg"); /* Legacy iOS */
+      url('./assets/fonts/inter-v8-latin-700.svg#Inter') format('svg'); /* Legacy iOS */
 }
 
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
   line-height: 2;
   color: white;
+  background-color: black;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 .section-title {
-  font-family: "Merriweather";
+  font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -108,7 +109,7 @@ img {
   text-align: center;
 }
 .section-title__left-right-line::before {
-  content: "";
+  content: '';
   border-bottom: 2px solid #bdae82;
   width: 50%;
   height: 0.5em;
@@ -118,7 +119,7 @@ img {
   margin-left: calc(-50% - 20px);
 }
 .section-title__left-right-line::after {
-  content: "";
+  content: '';
   border-bottom: 2px solid #bdae82;
   width: 50%;
   height: 0.5em;
@@ -137,7 +138,6 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: black;
 }
 
 /** header start */
@@ -147,7 +147,6 @@ img {
   left: 0;
   width: 100%;
   z-index: 9999;
-  transition: 0.3s linear;
 }
 .header_active {
   background-color: #00200d;
@@ -166,6 +165,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s linear;
 }
 .nav-list {
   display: flex;
@@ -238,7 +238,7 @@ img {
   padding: 250px 0 330px 80px;
 }
 .hero-section__text h1 {
-  font-family: "Merriweather";
+  font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -253,7 +253,7 @@ img {
   height: 55px;
   background-color: #bdae82;
   border: 0;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -314,7 +314,7 @@ img {
 .portfolio__btn {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
@@ -371,6 +371,10 @@ img {
 /** video end */
 
 /** price start */
+.button__price {
+  width: auto;
+  height: auto;
+}
 .price__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -386,7 +390,7 @@ img {
   border: 2px solid #bdae82;
 }
 .price__title {
-  font-family: "Merriweather";
+  font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -395,7 +399,7 @@ img {
   color: #ffffff;
 }
 .price__coast {
-  font-family: "Merriweather";
+  font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -435,7 +439,7 @@ img {
   margin-left: auto;
 }
 .contacts-title {
-  font-family: "Merriweather";
+  font-family: 'Merriweather';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -454,7 +458,7 @@ img {
   padding-left: 20px;
 }
 .contacts-item::placeholder {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -472,7 +476,7 @@ img {
 }
 .contacts-form input textarea {
   color: #bdae82;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -482,7 +486,7 @@ img {
 input:focus,
 textarea:focus {
   color: #bdae82;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -492,7 +496,7 @@ textarea:focus {
 input,
 textarea {
   color: #bdae82;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -523,13 +527,13 @@ textarea {
   color: white;
   transition: color 0.3s;
 }
-.social-list {
+/* .social-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 188px;
-}
+} */
 .footer a:hover,
 .footer a:active,
 .footer a:focus {
@@ -545,6 +549,13 @@ textarea {
 /** footer end */
 
 /* Media start */
+
+/* Media start */
+@media screen and (max-width: 960px) {
+  .section__video__background {
+    height: 550px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .header__burger {
@@ -598,6 +609,75 @@ textarea {
   }
   .header__nav-close-line:last-child {
     transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .price__items {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .price__item {
+    margin-bottom: 50px;
+  }
+  .contacts-container {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-section__text {
+    width: 427px;
+  }
+  .section__skills__items {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+  .section__video__background {
+    height: 500px;
+  }
+  .portfolio__btns {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+  .portfolio__pics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contacts-container {
+    max-width: 300px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .social-list {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .section__skills__items {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+  }
+  .section__video__background {
+    height: 280px;
+  }
+  .price__items {
+    width: 100%;
+  }
+  .contacts__pic {
+    height: 409px;
+  }
+  .contacts-container {
+    max-width: 280px;
+    padding-top: 0;
+  }
+  .contacts-title {
+    padding-bottom: 0;
+  }
+  .hero-section__text {
+    width: 295px;
+  }
+  .hero-section__text h1 {
+    line-height: 80px;
   }
 }
 

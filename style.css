@@ -152,10 +152,14 @@ img {
   background-color: #00200d;
 }
 .nav {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
 }
-.switch-lng {
-  display: none;
+.header__switch-lng {
+  display: inline-block;
   color: white;
   padding-right: 20px;
 }
@@ -178,11 +182,19 @@ img {
   transition: color 0.3s;
   color: white;
 }
+.header__currLang {
+  transition: color 0.3s;
+  cursor: pointer;
+}
 .nav-list__link:hover,
+.nav-list__link:focus,
 .nav-list__link:active,
-.nav-list__link:focus {
+.header__currLang:hover,
+.header__currLang:active,
+.header__currLang:focus {
   color: #bdae82;
 }
+
 .icon {
   width: 50px;
   height: 50px;
@@ -589,6 +601,11 @@ textarea {
     font-size: 42px;
     line-height: 48px;
   }
+  .header__switch-lng {
+    font-size: 42px;
+    line-height: 48px;
+    padding: 20px 29px;
+  }
   .header__nav-close {
     position: absolute;
     width: 40px;
@@ -596,6 +613,7 @@ textarea {
     top: 20px;
     right: 165px;
     z-index: 11;
+    cursor: pointer;
   }
   .header__nav-close-line {
     display: block;
@@ -654,6 +672,9 @@ textarea {
   }
 }
 @media screen and (max-width: 515px) {
+  .main__background {
+    height: 100vh;
+  }
   .section__skills__items {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 50px;
@@ -665,7 +686,7 @@ textarea {
     width: 100%;
   }
   .contacts__pic {
-    height: 409px;
+    height: 100vh;
   }
   .contacts-container {
     max-width: 280px;
@@ -676,6 +697,7 @@ textarea {
   }
   .hero-section__text {
     width: 295px;
+    padding: 155px 0 330px 80px;
   }
   .hero-section__text h1 {
     line-height: 80px;

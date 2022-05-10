@@ -26,3 +26,22 @@
     });
   }
 })();
+
+//translate
+let languageTranslate = 'en';
+
+function changeTranslate(language) {
+  if (languageTranslate === language) {
+    return;
+  }
+  languageTranslate = language;
+
+  Array.from(document.getElementsByTagName('*')).forEach((item) => {
+    if (
+      item.dataset.translate &&
+      i18Obj[languageTranslate][item.dataset.translate]
+    ) {
+      item.textContent = i18Obj[languageTranslate][item.dataset.translate];
+    }
+  });
+}

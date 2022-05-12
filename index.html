@@ -181,12 +181,17 @@
 
       <!-- portfolio start -->
       <section class="section" id="Portfolio">
-        <h2 class="section-title section-title__left-right-line">Portfolio</h2>
+        <h2
+          class="section-title section-title__left-right-line"
+          data-translate="portfolio"
+        >
+          Portfolio
+        </h2>
         <form action="#!" class="portfolio__btns">
-          <button class="portfolio__btn">Winter</button>
-          <button class="portfolio__btn">Spring</button>
-          <button class="portfolio__btn">Summer</button>
-          <button class="portfolio__btn">Autumn</button>
+          <button class="portfolio__btn" data-translate="winter">Winter</button>
+          <button class="portfolio__btn" data-translate="spring">Spring</button>
+          <button class="portfolio__btn" data-translate="summer">Summer</button>
+          <button class="portfolio__btn" data-translate="autumn">Autumn</button>
         </form>
         <div class="portfolio__pics">
           <div class="portfolio__pic">
@@ -237,7 +242,12 @@
 
       <!-- video start -->
       <section class="section section__video" id="Video">
-        <h2 class="section-title section-title__left-right-line">Video</h2>
+        <h2
+          class="section-title section-title__left-right-line"
+          data-translate="video"
+        >
+          Video
+        </h2>
         <div class="section__video__background">
           <!-- <img
               src="./assets/img/video-player.jpg"
@@ -258,48 +268,101 @@
 
       <!-- price start -->
       <section class="section" id="Price">
-        <h2 class="section-title section-title__left-right-line">Price</h2>
+        <h2
+          class="section-title section-title__left-right-line"
+          data-translate="price"
+        >
+          Price
+        </h2>
         <div class="price__items">
           <div class="price__item">
             <h3 class="price__title">Standard</h3>
             <h4 class="price__coast">500 $</h4>
             <p class="price__desc">
-              One location <br />
-              120 photos in color <br />
-              12 photos in retouch <br />
-              Readiness 2-3 weeks <br />
-              Make up, visage
+              <span data-translate="price-description-1-span-1"
+                >One location</span
+              >
+              <br />
+              <span data-translate="price-description-1-span-2"
+                >120 photos in color</span
+              >
+              <br />
+              <span data-translate="price-description-1-span-3"
+                >12 photos in retouch</span
+              >
+              <br />
+              <span data-translate="price-description-1-span-4"
+                >Readiness 2-3 weeks</span
+              >
+              <br />
+              <span data-translate="price-description-1-span-5"
+                >Make up, visage</span
+              >
             </p>
             <form action="#!" class="price__order">
-              <button class="button button__price">Order shooting</button>
+              <button class="button button__price" data-translate="order">
+                Order shooting
+              </button>
             </form>
           </div>
           <div class="price__item">
             <h3 class="price__title">Premium</h3>
             <h4 class="price__coast">700 $</h4>
             <p class="price__desc">
-              One or two locations <br />
-              200 photos in color <br />
-              20 photos in retouch <br />
-              Readiness 1-2 weeks <br />
-              Make up, visage
+              <span data-translate="price-description-2-span-1"
+                >One or two locations</span
+              >
+              <br />
+              <span data-translate="price-description-2-span-2"
+                >200 photos in color</span
+              >
+              <br />
+              <span data-translate="price-description-2-span-3"
+                >20 photos in retouch</span
+              >
+              <br />
+              <span data-translate="price-description-2-span-4"
+                >Readiness 1-2 weeks</span
+              >
+              <br />
+              <span data-translate="price-description-2-span-5"
+                >Make up, visage</span
+              >
             </p>
             <form action="#!" class="price__order">
-              <button class="button button__price">Order shooting</button>
+              <button class="button button__price" data-translate="order">
+                Order shooting
+              </button>
             </form>
           </div>
           <div class="price__item">
             <h3 class="price__title">Gold</h3>
             <h4 class="price__coast">1000 $</h4>
             <p class="price__desc">
-              Three locations or more <br />
-              300 photos in color <br />
-              50 photos in retouch <br />
-              Readiness 1 week <br />
-              Make up, visage, hairstyle
+              <span data-translate="price-description-3-span-1"
+                >Three locations or more</span
+              >
+              <br />
+              <span data-translate="price-description-3-span-2"
+                >300 photos in color</span
+              >
+              <br />
+              <span data-translate="price-description-3-span-3"
+                >50 photos in retouch</span
+              >
+              <br />
+              <span data-translate="price-description-3-span-4"
+                >Readiness 1 week</span
+              >
+              <br />
+              <span data-translate="price-description-3-span-5"
+                >Make up, visage, hairstyle</span
+              >
             </p>
             <form action="#!" class="price__order">
-              <button class="button button__price">Order shooting</button>
+              <button class="button button__price" data-translate="order">
+                Order shooting
+              </button>
             </form>
           </div>
         </div>
@@ -315,7 +378,9 @@
             class="contacts__background"
           /> -->
           <div class="contacts-container">
-            <h2 class="contacts-title">Contact me</h2>
+            <h2 class="contacts-title" data-translate="contact-me">
+              Contact me
+            </h2>
             <form action="#!" class="contacts-form">
               <input
                 type="email"
@@ -326,15 +391,21 @@
               <input
                 type="tel"
                 class="contacts-item contacts-form__tel"
+                id="tel"
                 name="tel"
                 placeholder="Phone"
               />
               <textarea
                 class="contacts-item contacts-form__textarea"
+                id="message"
                 name="Message"
                 placeholder="Message"
               ></textarea>
-              <button class="button contacts-form__submit" name="user-contacts">
+              <button
+                class="button contacts-form__submit"
+                name="user-contacts"
+                data-translate="send-message"
+              >
                 Send message
               </button>
             </form>

@@ -29,6 +29,9 @@
 
 //translate
 let languageTranslate = "en";
+const form = document.querySelector(".contacts-form");
+const tel = document.getElementById("tel");
+const message = document.getElementById("message");
 
 function changeTranslate(language) {
   if (languageTranslate === language) {
@@ -38,9 +41,13 @@ function changeTranslate(language) {
   if (language === "ru") {
     lang_en.classList.remove("changeColor");
     lang_ru.classList.add("changeColor");
+    tel.placeholder = "Телефон";
+    message.placeholder = "Сообщение";
   } else {
     lang_ru.classList.remove("changeColor");
     lang_en.classList.add("changeColor");
+    tel.placeholder = "Phone";
+    message.placeholder = "Message";
   }
   Array.from(document.getElementsByTagName("*")).forEach((item) => {
     if (

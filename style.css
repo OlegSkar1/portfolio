@@ -188,7 +188,11 @@ img {
 }
 .nav-list__link:hover,
 .nav-list__link:focus,
-.nav-list__link:active {
+.nav-list__link:active,
+.header__currLang:hover {
+  color: #bdae82;
+}
+.changeColor {
   color: #bdae82;
 }
 

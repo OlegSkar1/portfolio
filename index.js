@@ -27,31 +27,27 @@
   }
 })();
 
-<<<<<<< HEAD
-//start translate
-const select = document.querySelectorAll(".header__currLang");
-
-for (let lang of select) {
-  lang.addEventListener("click", (event) => {
-    let currLang = event.target.innerHTML;
-    location.href = window.location.pathname + "#" + currLang;
-=======
 //translate
-let languageTranslate = 'en';
+let languageTranslate = "en";
 
 function changeTranslate(language) {
   if (languageTranslate === language) {
     return;
   }
   languageTranslate = language;
-
-  Array.from(document.getElementsByTagName('*')).forEach((item) => {
+  if (language === "ru") {
+    lang_en.classList.remove("changeColor");
+    lang_ru.classList.add("changeColor");
+  } else {
+    lang_ru.classList.remove("changeColor");
+    lang_en.classList.add("changeColor");
+  }
+  Array.from(document.getElementsByTagName("*")).forEach((item) => {
     if (
       item.dataset.translate &&
       i18Obj[languageTranslate][item.dataset.translate]
     ) {
       item.textContent = i18Obj[languageTranslate][item.dataset.translate];
     }
->>>>>>> 6e1e630099021aad0204c681fa11084eab6b965d
   });
 }

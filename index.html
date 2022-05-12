@@ -24,25 +24,47 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="#Skills" class="nav-list__link">Skills</a>
+              <a href="#Skills" class="nav-list__link" data-translate="skills"
+                >Skills</a
+              >
             </li>
             <li class="nav-list__item">
-              <a href="#Portfolio" class="nav-list__link">Portfolio</a>
+              <a
+                href="#Portfolio"
+                class="nav-list__link"
+                data-translate="portfolio"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-list__item">
-              <a href="#Video" class="nav-list__link">Video</a>
+              <a href="#Video" class="nav-list__link" data-translate="video"
+                >Video</a
+              >
             </li>
             <li class="nav-list__item">
-              <a href="#Price" class="nav-list__link">Price</a>
+              <a href="#Price" class="nav-list__link" data-translate="price"
+                >Price</a
+              >
             </li>
             <li class="nav-list__item">
-              <a href="#Contacts" class="nav-list__link">Contacts</a>
+              <a
+                href="#Contacts"
+                class="nav-list__link"
+                data-translate="contacts"
+                >Contacts</a
+              >
             </li>
           </ul>
           <div class="header__switch-lng">
-            <span class="header__currLang" id="lang_en">en</span>/<span
+            <span
+              class="header__currLang"
+              id="lang_en"
+              onclick="changeTranslate('en')"
+              >en</span
+            >/<span
               class="header__currLang"
               id="lang_ru"
+              onclick="changeTranslate('ru')"
               >ru</span
             >
           </div>
@@ -363,7 +385,7 @@
       </div>
     </footer>
     <!-- footer end -->
-
+    <script src="translate.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

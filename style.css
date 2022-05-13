@@ -339,7 +339,11 @@ img {
   transition: 0.3s;
 }
 .portfolio__btn:focus,
-.portfolio__btn:visited {
+.portfolio__btn:active {
+  color: black;
+  background-color: #bdae82;
+}
+.portfolio__btn_changeColor {
   color: black;
   background-color: #bdae82;
 }

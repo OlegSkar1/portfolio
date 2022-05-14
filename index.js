@@ -118,3 +118,5 @@ portfolio.addEventListener("click", (event) => {
     summer.classList.remove("portfolio__btn_changeColor");
   }
 });
+
+//Change theme

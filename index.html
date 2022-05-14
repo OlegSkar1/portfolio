@@ -18,7 +18,7 @@
     <header class="header">
       <div class="container header__container">
         <a href="#" class="header__logo-link"
-          ><svg class="icon">
+          ><svg class="icon header__logo">
             <use xlink:href="./assets/svg/sprite.svg#logo_unvisited"></use></svg
         ></a>
         <nav class="nav">
@@ -55,24 +55,33 @@
               >
             </li>
           </ul>
-          <div class="header__switch-lng">
-            <span
-              class="header__currLang changeColor"
-              id="lang_en"
-              onclick="changeTranslate('en')"
-              >en</span
-            >/<span
-              class="header__currLang"
-              id="lang_ru"
-              onclick="changeTranslate('ru')"
-              >ru</span
-            >
-          </div>
+
           <div class="header__nav-close">
             <span class="header__nav-close-line"></span>
             <span class="header__nav-close-line"></span>
           </div>
         </nav>
+
+        <div class="header__switch-lng">
+          <span
+            class="header__currLang changeColor"
+            id="lang_en"
+            onclick="changeTranslate('en')"
+            >en</span
+          ><span>/</span
+          ><span
+            class="header__currLang"
+            id="lang_ru"
+            onclick="changeTranslate('ru')"
+            >ru</span
+          >
+        </div>
+
+        <div class="header__change-theme">
+          <div class="header__theme header__logo-link">
+            <img src="./assets/svg/Vector.svg" alt="dark theme" />
+          </div>
+        </div>
 
         <div class="header__burger burger">
           <span class="burger__line burger__line_top"></span>

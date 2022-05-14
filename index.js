@@ -60,12 +60,13 @@ function changeTranslate(language) {
   });
 }
 
-//Portfolio
+//Portfolio start
 const portfolio = document.querySelector(".portfolio__btns");
 let portfolioPics = document.querySelectorAll(".portfolio__pic__thumb");
 const button = document.getElementsByTagName("button");
 
 portfolio.addEventListener("click", (event) => {
+  event.preventDefault();
   if (event.target === button.winter) {
     pic1.setAttribute("src", "./assets/img/winter/1.jpg");
     pic2.setAttribute("src", "./assets/img/winter/2.jpg");
@@ -119,12 +120,34 @@ portfolio.addEventListener("click", (event) => {
 });
 
 //Change theme
-let theme = document.querySelector(".header__theme");
-let themeHidden = document.querySelector(".header__theme_hidden");
+let dark = document.querySelector("#dark_theme");
+let light = document.querySelector("#white_theme");
 
 function changeTheme() {
-  theme.classList.toggle("header__theme_hidden");
-  theme.classList.toggle("header__theme");
-  themeHidden.classList.toggle("header__theme_hidden");
-  themeHidden.classList.toggle("header__theme");
+  if (localStorage.getItem("theme") === "white") {
+    localStorage.removeItem("theme");
+  } else {
+    localStorage.setItem("theme", "white");
+  }
+  addWhiteClass();
 }
+
+function addWhiteClass() {
+  try {
+    if (localStorage.getItem("theme") === "white") {
+      dark.classList.add("header__theme_hidden");
+      dark.classList.remove("header__theme");
+      light.classList.add("header__theme");
+      light.classList.remove("header__theme_hidden");
+      document.querySelector("body").classList.add("white");
+    } else {
+      dark.classList.add("header__theme");
+      dark.classList.remove("header__theme_hidden");
+      light.classList.add("header__theme_hidden");
+      light.classList.remove("header__theme");
+
+      document.querySelector("body").classList.remove("white");
+    }
+  } catch (err) {}
+}
+addWhiteClass();

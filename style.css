@@ -86,6 +86,12 @@ body {
   color: white;
   background-color: black;
 }
+
+body.white {
+  color: black;
+  background-color: white;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -105,12 +111,17 @@ img {
   margin: 0 auto;
   overflow: hidden;
 }
+
+.white .section-title {
+  color: #000;
+}
 .section-title__left-right-line {
   text-align: center;
 }
 .section-title__left-right-line::before {
   content: "";
-  border-bottom: 2px solid #bdae82;
+  border-bottom: 2px solid;
+  border-color: #bdae82;
   width: 50%;
   height: 0.5em;
   position: absolute;
@@ -118,9 +129,14 @@ img {
   padding-top: 120px;
   margin-left: calc(-50% - 20px);
 }
+.white .section-title__left-right-line::before,
+.white .section-title__left-right-line::after {
+  border-color: #000;
+}
 .section-title__left-right-line::after {
   content: "";
-  border-bottom: 2px solid #bdae82;
+  border-bottom: 2px solid;
+  border-color: #bdae82;
   width: 50%;
   height: 0.5em;
   position: absolute;
@@ -275,6 +291,7 @@ img {
   color: #ffffff;
 }
 .hero-section__text p {
+  color: #ffffff;
   padding-bottom: 25px;
 }
 .button {
@@ -353,15 +370,29 @@ img {
   border: 1px solid #bdae82;
   transition: 0.3s;
 }
+
+.white .portfolio__btn {
+  color: #000;
+  background-color: #fff;
+}
+
 .portfolio__btn:focus,
 .portfolio__btn:active {
   color: black;
   background-color: #bdae82;
 }
-.portfolio__btn_changeColor {
-  color: black;
+
+.white .portfolio__btn:focus,
+.white .portfolio__btn:active,
+.white .portfolio__btn:hover {
+  color: white;
   background-color: #bdae82;
 }
+
+/* .portfolio__btn_changeColor {
+  color: black;
+  background-color: #bdae82;
+} */
 .portfolio__pics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -431,6 +462,11 @@ img {
   text-align: center;
   color: #ffffff;
 }
+
+.white .price__title {
+  color: #000;
+}
+
 .price__coast {
   font-family: "Merriweather";
   font-style: normal;
@@ -547,6 +583,10 @@ textarea {
   align-items: center;
   height: 150px;
   margin: 0 auto;
+  background-color: #000;
+}
+.footer-data__year {
+  color: #fff;
 }
 .footer-data__list {
   display: flex;
@@ -555,18 +595,14 @@ textarea {
   align-items: center;
   width: 180px;
 }
+.footer-data__c {
+  color: #fff;
+}
 .footer a {
   text-decoration: none;
   color: white;
   transition: color 0.3s;
 }
-/* .social-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 188px;
-} */
 .footer a:hover,
 .footer a:active,
 .footer a:focus {
@@ -581,9 +617,7 @@ textarea {
 }
 /** footer end */
 
-/* Media start */
-
-/* Media start */
+/** Media start */
 @media screen and (max-width: 960px) {
   .section__video__background {
     height: 550px;
@@ -607,6 +641,14 @@ textarea {
     transform: translateX(100%);
     transition: 0.2s all linear;
   }
+
+  .white .nav {
+    background-color: #fff;
+  }
+  .white .nav-list__link {
+    color: #000;
+  }
+
   .header__switch-lng {
     margin-left: auto;
     text-align: center;
@@ -644,6 +686,10 @@ textarea {
     position: absolute;
     top: 50%;
     background-color: #ffffff;
+  }
+
+  .white .header__nav-close-line {
+    background-color: #000;
   }
   .header__nav-close-line:first-child {
     transform: translateY(-50%) rotate(45deg);

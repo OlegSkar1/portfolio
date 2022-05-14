@@ -214,6 +214,9 @@ img {
   padding: 20px 20px 20px 0;
   cursor: pointer;
 }
+.header__theme_hidden {
+  display: none;
+}
 .header__logo-link {
   transition: 0.3s;
 }

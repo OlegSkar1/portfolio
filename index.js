@@ -29,7 +29,6 @@
 
 //translate
 let languageTranslate = "en";
-let myStorage;
 const form = document.querySelector(".contacts-form");
 const tel = document.getElementById("tel");
 const message = document.getElementById("message");
@@ -120,3 +119,12 @@ portfolio.addEventListener("click", (event) => {
 });
 
 //Change theme
+let theme = document.querySelector(".header__theme");
+let themeHidden = document.querySelector(".header__theme_hidden");
+
+function changeTheme() {
+  theme.classList.toggle("header__theme_hidden");
+  theme.classList.toggle("header__theme");
+  themeHidden.classList.toggle("header__theme_hidden");
+  themeHidden.classList.toggle("header__theme");
+}
